@@ -1,0 +1,40 @@
+body {
+    height: 100vh;
+    width: 100vw;
+}
+
+.h-fit-content {
+    height: fit-content;
+}
+
+.menu-item {
+    transition: border .1s, color .1s;
+    border-left: 4px solid transparent;
+}
+
+.menu-item--active {
+    border-left: 4px solid salmon;
+    color: white;
+}
+
+.menu-link {
+    margin-left: -4px;
+}
+
+.chats-wrapper {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.chats-search {
+    height: 46px;
+    margin-bottom: 30px;
+}
+
+.chats-sort {
+    height: 32px;
+}
+
+.chats {
+    height: calc(100vh - 200px);
+}

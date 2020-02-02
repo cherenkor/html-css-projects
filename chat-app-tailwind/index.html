@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tailwind</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="./css/tailwind.css" rel="stylesheet">
+    <link href="./css/styles.css" rel="stylesheet">
+</head>
+
+<body class="bg-gray-800">
+    <div class="flex flex-wrap sm:flex-no-wrap w-screen h-screen overflow-auto sm:overflow-hidden">
+        <div class="sidebar hidden sm:flex flex-col justify-between items-center bg-gray-800 h-full sm:w-32 py-12 text-white">
+            <div class="avatar w-16 relative">
+                <div class="border-gray-800 border-2 absolute bottom-0 right-0 mr-2 bg-green-400 rounded-full overflow-hidden h-3 w-3 flex items-center justify-center">
+                </div>
+                <div class="user-avatar-image bg-cover bg-center border-gray-800 border-2 rounded-full overflow-hidden h-16 w-16 flex items-center justify-center" style="background-image: url('https://i1.wp.com/www.nationalreview.com/wp-content/uploads/2018/08/kanye-west-paris-fashion-week-2015.jpg?resize=789%2C460&ssl=1')">
+                </div>
+            </div>
+            <div class="menu-wrapper w-full">
+                <ul class="menu flex flex-col">
+                    <li class="menu-item flex justify-center w-full mb-6 text-gray-400 hover:text-white">
+                        <a href="#" class="menu-link">
+                            <i class="text-4xl material-icons">home</i>
+                        </a>
+                    </li>
+                    <li class="menu-item menu-item--active flex justify-center w-full mb-6 text-gray-400 hover:text-white">
+                        <a href="#" class="menu-link">
+                            <i class="text-4xl material-icons">forum</i>
+                        </a>
+                    </li>
+                    <li class="menu-item flex justify-center w-full mb-6 text-gray-400 hover:text-white">
+                        <a href="#" class="menu-link">
+                            <i class="text-4xl material-icons">notifications</i>
+                        </a>
+                    </li>
+                    <li class="menu-item flex justify-center w-full mb-6 text-gray-400 hover:text-white">
+                        <a href="#" class="menu-link">
+                            <i class="text-4xl material-icons">settings</i>
+                        </a>
+                    </li>
+                    <li class="menu-item flex justify-center w-full mb-6 text-gray-400 hover:text-white">
+                        <a href="#" class="menu-link">
+                            <i class="text-4xl material-icons">more_horiz</i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="logout">
+                <a href="#" class="text-gray-400 hover:text-white">
+                    <i class="text-4xl material-icons">logout</i>
+                </a>
+            </div>
+        </div>
+
+        <div class="chats-wrapper bg-gray-900 w-full sm:w-3/6 md:w-5/12 px-12 relative">
+            <div class="chats-search flex items-center text-gray-400 bg-gray-700 rounded-full px-4 overflow-hidden">
+                <i class="material-icons">search</i>
+                <input placeholder="Search" class="w-full border-red-700 border-b-2 ml-2 outline-none bg-transparent" />
+            </div>
+            <div class="chats-sort w-full">
+                <span class="text-gray-400">Sort by:</span>
+                <select name="sort-messages" class="bg-transparent outline-none text-white">
+                    <option value="lastMessages">Last messages</option>
+                    <option value="favorites">Favorites</option>
+                    <option value="usernames">User names</option>
+                </select>
+            </div>
+            <div class="chats overflow-y-auto -mr-3 pr-3">
+                <div class="chat flex mb-6 rounded-lg p-6 h-32 overflow-hidden bg-gray-800">
+                    <div class="info flex flex-col w-11/12 text-white">
+                        <div class="user-details flex w-full">
+                            <div class="user-avatar relative">
+                                <div class="border-gray-800 border-2 absolute bottom-0 right-0 mr-1 bg-green-400 rounded-full overflow-hidden h-3 w-3 flex items-center justify-center">
+                                </div>
+                                <div class="user-avatar-image bg-cover bg-center border-gray-800 border-2 rounded-full overflow-hidden h-full w-12 flex items-center justify-center" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/a/a4/NF_photo_2016.jpg')">
+                                </div>
+                            </div>
+                            <div class="user-info w-full ml-4">
+                                <h3>Nathan F.</h3>
+                                <p class="text-sm text-gray-500">Online • 1h ago</p>
+                            </div>
+                        </div>
+                        <div class="message h-full flex items-end">
+                            <p class="truncate">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus ab rerum molestiae quam minima harum distinctio magnam tempore</p>
+                        </div>
+                    </div>
+                    <div class="close w-1/12 flex justify-end">
+                        <a href="#" class="text-gray-500 hover:text-white h-fit-content">
+                            <i class="material-icons">close</i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="chat flex mb-6 rounded-lg p-6 h-32 overflow-hidden bg-gray-800">
+                    <div class="info flex flex-col w-11/12 text-white">
+                        <div class="user-details flex w-full">
+                            <div class="user-avatar relative">
+                                <div class="border-gray-800 border-2 absolute bottom-0 right-0 mr-1 bg-green-400 rounded-full overflow-hidden h-3 w-3 flex items-center justify-center">
+                                </div>
+                                <div class="user-avatar-image bg-cover bg-center border-gray-800 border-2 rounded-full overflow-hidden h-full w-12 flex items-center justify-center" style="background-image: url('https://instagram.fiev9-1.fna.fbcdn.net/v/t51.2885-19/s150x150/79890523_625103138244752_2070041947384315904_n.jpg?_nc_ht=instagram.fiev9-1.fna.fbcdn.net&_nc_ohc=WyhCiSzx8A4AX_PBOTn&oh=6b2e8bd70049a15bc96ac8c3ae548264&oe=5EBFD24F')">
+                                </div>
+                            </div>
+                            <div class="user-info w-full ml-4">
+                                <h3>G-Eazy</h3>
+                                <p class="text-sm text-gray-500">Online • 1h ago</p>
+                            </div>
+                        </div>
+                        <div class="message h-full flex items-end">
+                            <p class="truncate">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus ab rerum molestiae quam minima harum distinctio magnam tempore</p>
+                        </div>
+                    </div>
+                    <div class="close w-1/12 flex justify-end">
+                        <a href="#" class="text-gray-500 hover:text-white h-fit-content">
+                            <i class="material-icons">close</i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="chat flex mb-6 rounded-lg p-6 h-32 overflow-hidden bg-gray-700">
+                    <div class="info flex flex-col w-11/12 text-white">
+                        <div class="user-details flex w-full">
+                            <div class="user-avatar relative">
+                                <div class="border-gray-800 border-2 absolute bottom-0 right-0 mr-1 bg-green-400 rounded-full overflow-hidden h-3 w-3 flex items-center justify-center">
+                                </div>
+                                <div class="user-avatar-image bg-cover bg-center border-gray-800 border-2 rounded-full overflow-hidden h-full w-12 flex items-center justify-center" style="background-image: url('https://www.billboard.com/files/media/drake-2019-bbyx-billboard-1548.jpg')">
+                                </div>
+                            </div>
+                            <div class="user-info w-full ml-4">
+                                <h3>Aubrey Drake</h3>
+                                <p class="text-sm text-gray-500">Online • 1h ago</p>
+                            </div>
+                        </div>
+                        <div class="message h-full flex items-end">
+                            <p class="truncate">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus ab rerum molestiae quam minima harum distinctio magnam tempore</p>
+                        </div>
+                    </div>
+                    <div class="close w-1/12 flex justify-end">
+                        <a href="#" class="text-gray-500 hover:text-white h-fit-content">
+                            <i class="material-icons">close</i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="chat flex mb-6 rounded-lg p-6 h-32 overflow-hidden bg-gray-800">
+                    <div class="info flex flex-col w-11/12 text-white">
+                        <div class="user-details flex w-full">
+                            <div class="user-avatar relative">
+                                <div class="border-gray-800 border-2 absolute bottom-0 right-0 mr-1 bg-green-400 rounded-full overflow-hidden h-3 w-3 flex items-center justify-center">
+                                </div>
+                                <div class="user-avatar-image bg-cover bg-center border-gray-800 border-2 rounded-full overflow-hidden h-full w-12 flex items-center justify-center" style="background-image: url('https://static.highsnobiety.com/thumbor/0nApmMtRgDzpJOh3Dn9g7Q-oIvk=/fit-in/1200x800/smart/static.highsnobiety.com/wp-content/uploads/2020/01/31145949/lil-wayne-decapitate-drake-drink-champs-interview-01.jpg')">
+                                </div>
+                            </div>
+                            <div class="user-info w-full ml-4">
+                                <h3>Lil Wayne</h3>
+                                <p class="text-sm text-gray-500">Online • 1h ago</p>
+                            </div>
+                        </div>
+                        <div class="message h-full flex items-end">
+                            <p class="truncate">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus ab rerum molestiae quam minima harum distinctio magnam tempore</p>
+                        </div>
+                    </div>
+                    <div class="close w-1/12 flex justify-end">
+                        <a href="#" class="text-gray-500 hover:text-white h-fit-content">
+                            <i class="material-icons">close</i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="chat flex mb-6 rounded-lg p-6 h-32 overflow-hidden bg-gray-800">
+                    <div class="info flex flex-col w-11/12 text-white">
+                        <div class="user-details flex w-full">
+                            <div class="user-avatar relative">
+                                <div class="border-gray-800 border-2 absolute bottom-0 right-0 mr-1 bg-green-400 rounded-full overflow-hidden h-3 w-3 flex items-center justify-center">
+                                </div>
+                                <div class="user-avatar-image bg-cover bg-center border-gray-800 border-2 rounded-full overflow-hidden h-full w-12 flex items-center justify-center" style="background-image: url('https://i1.wp.com/www.nationalreview.com/wp-content/uploads/2018/08/kanye-west-paris-fashion-week-2015.jpg?resize=789%2C460&ssl=1')">
+                                </div>
+                            </div>
+                            <div class="user-info w-full ml-4">
+                                <h3>Kanye West</h3>
+                                <p class="text-sm text-gray-500">Online • 1h ago</p>
+                            </div>
+                        </div>
+                        <div class="message h-full flex items-end">
+                            <p class="truncate">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus ab rerum molestiae quam minima harum distinctio magnam tempore</p>
+                        </div>
+                    </div>
+                    <div class="close w-1/12 flex justify-end">
+                        <a href="#" class="text-gray-500 hover:text-white h-fit-content">
+                            <i class="material-icons">close</i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="add-button absolute flex justify-center items-center bottom-0 right-0 mr-12 mb-4 rounded-full h-16 w-16 bg-red-600 text-white overflow-hidden">
+                <a href="#" class="leading-none">
+                    <i class="material-icons text-3xl">add</i>
+                </a>
+            </div>
+        </div>
+
+        <div class="chat bg-gray-800 h-full w-full sm:w-3/6 md:w-7/12 flex flex-col">
+            <div class="chat-header h-48 border-b border-gray-700"></div>
+            <div class="chat-body h-full"></div>
+            <div class="chat-footer h-48 border-t border-gray-700"></div>
+        </div>
+    </div>
+</body>
+
+</html>
