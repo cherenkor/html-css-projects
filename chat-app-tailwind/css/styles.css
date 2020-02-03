@@ -38,3 +38,12 @@ body {
 .chats {
     height: calc(100vh - 200px);
 }
+
+.attachment {
+    transform: rotateZ(45deg);
+    transform-origin: center;
+}
+
+.message-input {
+    resize: none;
+}
