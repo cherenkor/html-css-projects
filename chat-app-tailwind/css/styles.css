@@ -51,7 +51,7 @@ body {
 .round-button {
     cursor: pointer;
     border: 5px solid transparent;
-    transition: border .3s, transform .3s;
+    transition: border .15s;
 }
 
 .round-button:hover {
