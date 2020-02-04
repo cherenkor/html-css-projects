@@ -48,6 +48,17 @@ body {
     resize: none;
 }
 
+.round-button {
+    cursor: pointer;
+    border: 5px solid transparent;
+    transition: border .3s, transform .3s;
+}
+
+.round-button:hover {
+    border: 5px solid darkred;
+    font-size: 1.1rem;
+}
+
 .round-button a {
     line-height: 0;
 }
